@@ -1,0 +1,50 @@
+# ========================================
+# DynamicBounties Configuration File
+# ========================================
+# This plugin allows players to place anonymous bounties on other players.
+# Bounties are claimed by killing the targeted player, with automatic payouts.
+#
+# Placeholders: {player}, {victim}, {amount}, {killer}
+# ========================================
+
+# General Plugin Settings
+general:
+  # Plugin prefix for messages
+  prefix: "&8[&cDynamicBounties&8] "
+
+# Bounty System Configuration
+bounty:
+  # Allow players to set bounties even if they don't have enough money (goes into negative balance)
+  allow_negative_balance: true
+
+  # Minimum bounty amount a player can place
+  min_bounty: 100
+
+  # Maximum bounty amount a player can place
+  max_bounty: 100000
+
+  # Percentage of bounty amount charged as fee when canceling a bounty
+  cancel_fee_percent: 5
+
+  # Whether to broadcast bounty claims to the server
+  broadcast_claim: true
+
+  # Message broadcasted when a bounty is claimed
+  # Placeholders: {amount}, {victim}, {killer}
+  broadcast_message: "&cA bounty of {amount} coins has been claimed on {victim} by {killer}!"
+
+  # Message sent when a bounty is successfully set
+  # Placeholders: {victim}, {amount}
+  set_message: "&aBounty of {amount} coins placed on {victim}!"
+
+  # Message sent when a bounty is canceled
+  # Placeholders: {victim}, {fee}
+  cancel_message: "&cBounty on {victim} canceled. Fee charged: {fee} coins."
+
+# Leaderboards Configuration
+leaderboards:
+  # Enable money earned leaderboard
+  enable_money: true
+
+  # Enable kills leaderboard
+  enable_kills: true
