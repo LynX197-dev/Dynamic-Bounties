@@ -1,5 +1,5 @@
 name: DynamicBounties
-version: 1.0.0
+version: 1.3
 main: com.itz_arnavfalke197.dynamicbounties.DynamicBounties
 api-version: 1.21
 depend: [Vault]
@@ -8,6 +8,9 @@ commands:
     description: Manage bounties
     usage: /bounty <set|list|info|cancel|top>
     aliases: [bounties]
+  db:
+    description: DynamicBounties admin commands
+    usage: /db <reload>
 permissions:
   dynamicbounties.user:
     description: Allows basic bounty features

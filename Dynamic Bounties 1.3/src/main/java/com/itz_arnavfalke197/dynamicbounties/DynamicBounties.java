@@ -1,6 +1,7 @@
 package com.itz_arnavfalke197.dynamicbounties;
 
 import com.itz_arnavfalke197.dynamicbounties.commands.BountyCommand;
+import com.itz_arnavfalke197.dynamicbounties.commands.DBCommand;
 import com.itz_arnavfalke197.dynamicbounties.listeners.PlayerDeathListener;
 import com.itz_arnavfalke197.dynamicbounties.managers.BountyManager;
 import com.itz_arnavfalke197.dynamicbounties.managers.StatsManager;
@@ -29,6 +30,10 @@ public class DynamicBounties extends JavaPlugin {
          BountyCommand bountyCommand = new BountyCommand();
          this.getCommand("bounty").setExecutor(bountyCommand);
          this.getCommand("bounty").setTabCompleter(bountyCommand); // This activates the tab-complete feature
+
+         DBCommand dbCommand = new DBCommand();
+         this.getCommand("db").setExecutor(dbCommand);
+         this.getCommand("db").setTabCompleter(dbCommand);
 
          // REGISTER EVENT LISTENERS
 
