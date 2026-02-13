@@ -1,4 +1,4 @@
-**WEBSITE:** https://lynx-development.lynx197.qzz.io/
+🌐 **WEBSITE:** https://lynx-development.lynx197.qzz.io/
 
 # Dynamic Bounties
 ****Dynamic Bounties lets players place bounties on anyone, creating a fully player-driven PvP economy.****
